@@ -1,0 +1,24 @@
+{
+  "hosting": {
+    "public": "public",
+    "headers": [
+      {
+        "source": "/__/*",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "host": "localhost",
+    "port": "3000"
+  }
+}
