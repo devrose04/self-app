@@ -1,0 +1,14 @@
+.WellnessStoryTest {
+  flex: 1;
+  width: 100%;
+  max-width: 1024px;
+  margin: 96px auto;
+  padding: 16px;
+  font-family: 'Inter Regular';
+  box-sizing: border-box;
+}
+
+.WellnessStoryTest * {
+  font-family: 'Inter Regular';
+  box-sizing: border-box;
+}

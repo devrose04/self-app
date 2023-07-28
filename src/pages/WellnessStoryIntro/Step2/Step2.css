@@ -1,0 +1,16 @@
+.WellnessStoryIntro_Step2__subTitle {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 32px;
+}
+
+.WellnessStoryIntro_Step2__paragraph {
+  margin-bottom: 32px;
+}
+
+.WellnessStoryIntro_Step2__buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}

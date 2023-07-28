@@ -1,0 +1,95 @@
+@import "../styles/variables";
+
+.share-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 20px;
+
+  .modal-content {
+    padding: 40px;
+    background-color: $white;
+    max-width: 600px;
+    min-height: 260px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+
+    .container {
+      width: 100%;
+      h2 {
+        font-size: $title_sm;
+      }
+
+      .row {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 5px;
+        border: 3px solid $black;
+        box-sizing: border-box;
+        font-family: $happyMonkey-regular;
+        padding: 10px;
+
+        &:last-child {
+          border-bottom: 3px solid $black !important;
+        }
+        label {
+          font-family: $happyMonkey-regular;
+          font-size: $text_sm;
+        }
+
+        span {
+          font-family: $happyMonkey-regular;
+          font-weight: bold;
+          font-size: $text_sm;
+        }
+
+        .row-values {
+          font-size: 16px;
+          margin-left: 10px;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+
+    .footer {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      background-color: transparent;
+      font-family: $inter-regular;
+      .share {
+        padding: 13px 34px;
+        background-color: $dark_green;
+        color: $white;
+        font-family: $happyMonkey-regular;
+        font-size: 16px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        border: none;
+        font-weight: bold;
+      }
+      span {
+        font-size: $text-md;
+        font-family: $happyMonkey-regular;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+
+      .buttons {
+        max-width: 40%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+      }
+    }
+  }
+}

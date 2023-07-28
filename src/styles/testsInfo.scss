@@ -1,0 +1,71 @@
+@import "./variables";
+
+.section-wrapper {
+  background-color: $skin;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .text {
+    max-width: 45%;
+    h2 {
+      font-family: $inter-bold;
+      font-weight: bold;
+      font-size: $title_md;
+    }
+
+    h3,
+    h4,
+    p {
+      margin-top: 20px;
+      font-size: $text_lg;
+      font-family: $inter-regular;
+      font-weight: normal;
+
+      @media screen and (max-width: 700px) {
+        font-size: $text_md;
+      }
+    }
+
+    ol {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      li {
+        font-size: $text_lg;
+        font-family: $inter-regular;
+        font-weight: normal;
+
+        @media screen and (max-width: 1200px) {
+          margin-left: 40px;
+        }
+        @media screen and (max-width: 700px) {
+          font-size: $text_md;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      max-width: 100%;
+    }
+  }
+
+  img {
+    align-self: center;
+
+    @media screen and (max-width: 1200px) {
+      margin-top: 100px;
+    }
+
+    @media screen and (max-width: 700px) {
+      width: 60%;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
+}

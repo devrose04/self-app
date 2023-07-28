@@ -1,0 +1,437 @@
+@import "../styles/variables";
+
+.home {
+  max-width: 100vw;
+}
+
+.hero {
+  height: 88vh;
+  max-width: 100%;
+  background-image: url("../images/mirror.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0%;
+  padding-top: 66px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-family: $italiana-regular;
+    font-size: $hero_title;
+    letter-spacing: 5%;
+    text-align: center;
+    color: var(--primary);
+
+    @media screen and (max-width: 650px) {
+      font-size: $title_sm;
+    }
+  }
+
+  .bottom_hero {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: 60px;
+    margin-left: 10vw;
+    margin-right: 5vw;
+
+    .left {
+      max-width: 420px;
+
+      h2 {
+        color: var(--light);
+        font-size: $title_lg;
+        font-family: $happyMonkey-regular;
+        font-weight: normal;
+        margin-bottom: 40px;
+
+        @media screen and (max-width: 650px) {
+          font-size: $title_sm;
+        }
+      }
+
+      .signup {
+        padding: 13px 34px;
+        background-color: var(--primary);
+        color: $white;
+        font-family: $inter-bold;
+        border-radius: 10px;
+      }
+    }
+
+    .right {
+      margin-top: auto;
+
+      h2 {
+        color: var(--accent);
+        font-family: $happyMonkey-regular;
+        font-size: $title_md;
+
+        @media screen and (max-width: 650px) {
+          font-size: $text_md;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 920px) {
+    padding-top: calc(20px + 12vh);
+  }
+}
+
+.holistic-view {
+  background-color: $skin;
+  padding-top: 110px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 54px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  .container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 114px;
+    width: 100%;
+
+    .left {
+      h2 {
+        font-family: $italiana-regular;
+        font-size: $title_lg;
+      }
+
+      p {
+        margin-top: 32px;
+        max-width: 676px;
+        width: 100%;
+        font-family: $happyMonkey-regular;
+        font-size: $text_lg;
+
+        @media screen and (max-width: 1200px) {
+          max-width: none;
+        }
+
+        @media screen and (max-width: 800px) {
+          font-size: $text_md;
+        }
+      }
+
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+      }
+    }
+
+    .right {
+      img {
+        margin-top: 100px;
+
+        @media screen and (max-width: 1200px) {
+          max-width: 90%;
+        }
+      }
+
+      @media screen and (max-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .join_now {
+    padding: 13px 34px;
+    background-color: var(--accent);
+    border: 1px solid $button_border_orange;
+    color: $white;
+    font-family: $inter-bold;
+    border-radius: 10px;
+    border: none;
+  }
+
+  @media screen and (max-width: 1200px) {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+.learn_personality {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 110px;
+  padding-left: 70px;
+  padding-bottom: 70px;
+  position: relative;
+  background-color: $yellow;
+  overflow: hidden;
+  z-index: 1;
+
+  .container {
+    display: flex;
+    position: relative;
+    z-index: 20;
+
+    .left {
+      h2 {
+        font-family: $italiana-regular;
+        font-size: $title_lg;
+
+        @media screen and (max-width: 800px) {
+          font-size: $title_md;
+        }
+      }
+
+      p {
+        margin-top: 32px;
+        margin-bottom: 100px;
+        max-width: 676px;
+        width: 100%;
+        font-family: $happyMonkey-regular;
+        font-size: $text_lg;
+
+        @media screen and (max-width: 800px) {
+          font-size: $text_md;
+        }
+      }
+    }
+  }
+  img {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    z-index: 1;
+
+    @media screen and (max-width: 1500px) {
+      right: -200px;
+    }
+
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  .learn_more {
+    padding: 13px 34px;
+    background-color: $button_yellow;
+    border: 1px solid $button_border_brown;
+    color: $white;
+    font-family: $inter-bold;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+  }
+
+  @media screen and (max-width: 800px) {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+.learn_relationship {
+  background-color: var(--discover-img);
+  padding: 110px 86px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 0;
+
+  .right {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      color: var(--light)!important;
+      font-family: $italiana-regular;
+      font-size: $title_lg;
+
+      @media screen and (max-width: 800px) {
+        font-size: $title_md;
+      }
+    }
+
+    p {
+      color: var(--light);
+      margin-top: 32px;
+      margin-bottom: 100px;
+      max-width: 580px;
+      width: 100%;
+      font-family: $happyMonkey-regular;
+      font-size: $text_lg;
+
+      @media screen and (max-width: 1200px) {
+        max-width: none;
+      }
+
+      @media screen and (max-width: 800px) {
+        font-size: $text_md;
+      }
+    }
+
+    .learn_more {
+      padding: 13px 34px;
+      background-color: var(--accent);
+      border: 1px solid $button_border_brown;
+      color: var(--light);
+      font-family: $inter-bold;
+      border-radius: 10px;
+      align-self: flex-end;
+      border: none;
+
+      @media screen and (max-width: 1400px) {
+        align-self: flex-start;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      margin-top: 40px;
+    }
+  }
+
+  img {
+    @media screen and (max-width: 1200px) {
+      max-width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+.learn_strengths {
+  background-color: $light_skin;
+  padding-top: 110px;
+  padding-left: 86px;
+  padding-bottom: 300px;
+  display: flex;
+  position: relative;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h2 {
+      font-family: $italiana-regular;
+      font-size: $title_lg;
+
+      @media screen and (max-width: 800px) {
+        font-size: $title_md;
+      }
+    }
+
+    p {
+      margin-top: 32px;
+      margin-bottom: 100px;
+      max-width: 580px;
+      width: 100%;
+      font-family: $happyMonkey-regular;
+      font-size: $text_lg;
+
+      @media screen and (max-width: 800px) {
+        font-size: $text_md;
+      }
+    }
+
+    a {
+      display: block;
+    }
+
+    .learn_more {
+      padding: 13px 34px;
+      background-color: var(--accent);
+      border: 1px solid $button_border_gray;
+      color: $white;
+      font-family: $inter-bold;
+      border-radius: 10px;
+    }
+
+    @media screen and (max-width: 800px) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    @media screen and (max-width: 1400px) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 70px !important;
+  }
+}
+
+.assessments_offered {
+  background-color: $white;
+  padding-top: 110px;
+  padding-left: 86px;
+  padding-bottom: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--light-accent);
+
+  h2 {
+    font-family: $italiana-regular;
+    font-size: $title_lg;
+
+    @media screen and (max-width: 800px) {
+      font-size: $title_md;
+    }
+  }
+
+  p {
+    margin-top: 48px;
+    margin-bottom: 100px;
+    max-width: 1240px;
+    width: 100%;
+    font-family: $happyMonkey-regular;
+    font-size: $text_lg;
+    text-align: center;
+
+    @media screen and (max-width: 800px) {
+      font-size: $text_md;
+    }
+  }
+
+  .explore {
+    padding: 13px 34px;
+    background-color: $green;
+    border: 1px solid $button_border_gray;
+    color: $dark_green;
+    font-family: $inter-bold;
+    border-radius: 10px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}

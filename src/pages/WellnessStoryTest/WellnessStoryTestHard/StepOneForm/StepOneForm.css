@@ -1,0 +1,27 @@
+.WellnessStoryTestHardStepOne__formContainer {
+  margin-top: 32px;
+}
+
+.WellnessStoryTestHardStepOne__buttonContainer {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+}
+
+.WellnessStoryTestHardStepOne__title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.WellnessStoryTestHardStepOne__contentContainer {
+  padding-left: 16px
+}
+
+.WellnessStoryTestHardStepOne__description {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 32px;
+}

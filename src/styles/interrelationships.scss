@@ -1,0 +1,56 @@
+@import "../styles/variables";
+
+.interrelationships {
+  background-color: $yellow;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-size: $title_lg;
+  }
+
+  .selectorOne {
+    max-width: 600px;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      font-size: $text-lg;
+      font-family: $inter-bold;
+      background-color: transparent;
+      border: none;
+    }
+
+    .selected {
+      text-decoration: underline;
+    }
+  }
+
+  .options {
+    max-width: 800px;
+    width: 100%;
+
+    .test_buttons {
+      margin-top: 20px;
+      margin-bottom: 60px;
+
+      display: flex;
+
+      .selected_test {
+        text-decoration: underline;
+      }
+
+      button {
+        font-size: $text-md;
+        font-family: $inter-bold;
+        background-color: transparent;
+        border: none;
+        margin-left: 30px;
+      }
+    }
+  }
+}

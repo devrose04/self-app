@@ -1,0 +1,10 @@
+.chartContainer {
+  width: 90%;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+
+  canvas {
+    width: 100% !important;
+  }
+}
