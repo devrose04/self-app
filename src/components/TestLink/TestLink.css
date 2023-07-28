@@ -1,0 +1,13 @@
+.TestLink-takeTestLink {
+  background: var(--primary);
+  color: var(--light);
+  border-radius: 20px;
+  padding: 4px 32px;
+}
+.TestLink-takeTestLink-done {
+  color: var(--primary);
+}
+
+.TestLink-testDoneStatus {
+  color: #2344b9;
+}

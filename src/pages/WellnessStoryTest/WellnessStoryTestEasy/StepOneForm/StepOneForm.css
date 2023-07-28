@@ -1,0 +1,27 @@
+.WellnessStoryTestEasyStepOne__formContainer {
+  margin-top: 32px;
+}
+
+.WellnessStoryTestEasyStepOne__buttonContainer {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+}
+
+.WellnessStoryTestEasyStepOne__title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.WellnessStoryTestEasyStepOne__contentContainer {
+  padding-left: 16px
+}
+
+.WellnessStoryTestEasyStepOne__description {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 32px;
+}

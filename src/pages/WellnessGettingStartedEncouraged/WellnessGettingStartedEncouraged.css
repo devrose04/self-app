@@ -1,0 +1,67 @@
+.WellnessGettingStartedEncouraged {
+  flex: 1;
+  width: 100%;
+  max-width: 1440px;
+  margin: 96px auto;
+  padding: 16px;
+  font-family: "Inter Regular";
+}
+
+.WellnessGettingStartedEncouraged-title,
+.WellnessGettingStartedEncouraged-spaceBottom {
+  margin-bottom: 16px;
+}
+
+.WellnessGettingStartedEncouraged-content {
+  padding-left: 16px;
+}
+
+.WellnessGettingStartedEncouraged-testListContainer {
+  padding-left: 16px;
+  margin: 48px auto;
+}
+
+.WellnessGettingStartedEncouraged-testList {
+  list-style: none;
+  margin: 16px 0;
+}
+
+.WellnessGettingStartedEncouraged-testListItem {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 4px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.WellnessGettingStartedEncouraged-testListItem > div {
+  flex: 1;
+  text-align: center;
+}
+
+.WellnessGettingStartedEncouraged-testListItem > div:first-of-type {
+  flex: 3;
+  text-align: left;
+}
+
+.WellnessGettingStartedEncouraged-testListItem > div:last-of-type {
+  text-align: right;
+  max-width: 32px;
+}
+
+.WellnessGettingStartedEncouraged-statusIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.WellnessGettingStartedEncouraged-boldUnderline {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.WellnessGettingStartedEncouraged-buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+}

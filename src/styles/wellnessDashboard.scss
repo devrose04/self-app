@@ -1,0 +1,455 @@
+@import "../styles/variables";
+
+.profile {
+  .titles {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 130px;
+    padding-bottom: 160px;
+    text-align: center;
+
+    .title-links-container {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      justify-content: center;
+    }
+
+    .Button-primary {
+      background-color: var(--primary);
+      color: var(--light);
+      border: none;
+      position: relative;
+    }
+
+    .story,
+    .check-in {
+      .popup-message {
+        display: none;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        .popup-message {
+          left: calc(35%);
+          top: calc(70%);
+          position: absolute;
+          display: block;
+          background: white;
+          border: 3px solid #053b47;
+          border-radius: 20px;
+          color: #053b47;
+          padding: 20px 15px;
+          z-index: 10;
+          min-width: 200px;
+          max-width: 300px;
+        }
+      }
+
+      // &:hover,
+      // &:active,
+      // &:focus {
+      //   .popup-message {
+      //     left: -10%;
+      //     display: block;
+      //     position: absolute;
+      //     z-index: 10;
+      //     width: 100%;
+      //     top: calc(100% + 5px);
+      //     background: white;
+      //     border: 3px solid #053b47;
+      //     border-radius: 20px;
+      //     color: #053b47;
+      //     padding: 35px 21px;
+      //   }
+      // }
+    }
+
+    h1 {
+      color: var(--primary);
+      font-size: $title_lg;
+      font-family: $happyMonkey-regular;
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+      display: block;
+      margin-top: 30px;
+      font-size: $title_md;
+      font-family: $inter-regular;
+    }
+
+    @media screen and (max-width: 900px) {
+      padding-left: 2vw;
+      padding-right: 2vw;
+      max-width: 90%;
+    }
+  }
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    h2 {
+      @media screen and (max-width: 670px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .share_button {
+      color: $dark_green;
+      font-family: $inter-bold;
+      font-size: $text_md;
+      display: flex;
+      align-items: center;
+      border: none;
+      font-weight: bold;
+      background-color: transparent;
+
+      img {
+        width: 40px;
+        margin-left: 10px;
+      }
+
+      @media screen and (max-width: 1280px) {
+        margin-top: 40px;
+      }
+    }
+
+    .edit_save {
+      display: flex;
+      align-items: center;
+
+      span {
+        font-family: $happyMonkey-regular;
+        font-weight: bold;
+        margin-right: 40px;
+        font-size: $text_md;
+      }
+      .save_button {
+        padding: 13px 34px;
+        background-color: $dark_green;
+        color: $white;
+        font-family: $happyMonkey-regular;
+        font-size: 16px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        border: none;
+        font-weight: bold;
+
+        span {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 560px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .tests-section {
+    background-color: var(--light);
+    padding: 30px;
+
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 10px;
+
+      h2 {
+        margin: 0;
+
+        @media screen and (max-width: 670px) {
+          margin-bottom: 20px;
+        }
+      }
+
+      .edit_save {
+        display: flex;
+        align-items: center;
+
+        span {
+          font-family: $happyMonkey-regular;
+          font-weight: bold;
+          margin-right: 40px;
+          font-size: $text_md;
+        }
+        .save_button {
+          padding: 13px 34px;
+          background-color: $dark_green;
+          color: $white;
+          font-family: $happyMonkey-regular;
+          font-size: 16px;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          border: none;
+          font-weight: bold;
+
+          span {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      @media screen and (max-width: 990px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    h2 {
+      font-size: $title_md;
+      font-family: $inter-bold;
+      max-width: none;
+    }
+
+    .tests {
+      margin-top: 60px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .col {
+        margin-right: 44px;
+
+        @media screen and (max-width: 1248px) {
+          margin-right: 0px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        @media screen and (max-width: 992px) {
+          width: 100%;
+        }
+
+        @media screen and (max-width: 670px) {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      @media screen and (max-width: 1248px) {
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+
+      @media screen and (max-width: 670px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @media screen and (max-width: 670px) {
+      padding: 12px;
+    }
+  }
+
+  .relationship {
+    background-color: $dark_skin;
+    padding: 30px;
+    padding: 30px;
+
+    .heading {
+      display: flex;
+      justify-content: space-between;
+
+      h2 {
+        @media screen and (max-width: 670px) {
+          margin-bottom: 20px;
+        }
+      }
+
+      .edit_save {
+        display: flex;
+        align-items: center;
+
+        span {
+          font-family: $happyMonkey-regular;
+          font-weight: bold;
+          margin-right: 40px;
+          font-size: $text_md;
+        }
+        .save_button {
+          padding: 13px 34px;
+          background-color: $dark_green;
+          color: $white;
+          font-family: $happyMonkey-regular;
+          font-size: 16px;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          border: none;
+          font-weight: bold;
+
+          span {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      @media screen and (max-width: 990px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    h2 {
+      font-size: $title_md;
+      font-family: $inter-bold;
+      max-width: none;
+    }
+
+    .tests {
+      margin-top: 60px;
+      display: flex;
+      align-items: center;
+
+      .col {
+        margin-right: 44px;
+
+        @media screen and (max-width: 1248px) {
+          margin-right: 0px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        @media screen and (max-width: 992px) {
+          width: 100%;
+        }
+
+        @media screen and (max-width: 650px) {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      @media screen and (max-width: 1248px) {
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+
+      @media screen and (max-width: 670px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @media screen and (max-width: 670px) {
+      padding: 12px;
+    }
+  }
+
+  .career {
+    background-color: $light_skin;
+    padding: 30px;
+    padding: 30px;
+
+    .heading {
+      display: flex;
+      justify-content: space-between;
+
+      h2 {
+        @media screen and (max-width: 670px) {
+          margin-bottom: 20px;
+        }
+      }
+
+      .edit_save {
+        display: flex;
+        align-items: center;
+
+        span {
+          font-family: $happyMonkey-regular;
+          font-weight: bold;
+          margin-right: 40px;
+          font-size: $text_md;
+        }
+        .save_button {
+          padding: 13px 34px;
+          background-color: $dark_green;
+          color: $white;
+          font-family: $happyMonkey-regular;
+          font-size: 16px;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          border: none;
+          font-weight: bold;
+
+          span {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      @media screen and (max-width: 990px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    h2 {
+      font-size: $title_md;
+      font-family: $inter-bold;
+      max-width: none;
+    }
+
+    .tests {
+      margin-top: 60px;
+      display: flex;
+      align-items: center;
+
+      .col {
+        margin-right: 44px;
+
+        @media screen and (max-width: 1248px) {
+          margin-right: 0px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        @media screen and (max-width: 992px) {
+          width: 100%;
+        }
+
+        @media screen and (max-width: 650px) {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      @media screen and (max-width: 1248px) {
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+
+      @media screen and (max-width: 670px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @media screen and (max-width: 670px) {
+      padding: 12px;
+    }
+  }
+
+  @media screen and (max-width: 920px) {
+    padding-top: calc(20px + 12vh);
+  }
+
+  .join_now {
+    color: white;
+  }
+}

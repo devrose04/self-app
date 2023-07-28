@@ -1,0 +1,34 @@
+@import "./variables";
+
+.links {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $inter-bold;
+  font-size: $text_lg;
+
+  .learn_more {
+    color: $black;
+
+    @media screen and (max-width: 500px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .take_quiz {
+    padding: 13px 34px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    color: $black;
+
+    &.visited {
+      color: $black;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+  }
+}

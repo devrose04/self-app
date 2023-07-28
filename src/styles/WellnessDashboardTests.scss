@@ -1,0 +1,82 @@
+.WellnessDashboardTests {
+  background-color: #f8f6f4;
+  padding: 32px 0;
+  font-family: "Inter Regular";
+}
+
+.WellnessDashboardTests-container {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.WellnessDashboardTests-categoryContainer {
+  border-bottom: thin solid #ccc;
+  padding: 16px 8px;
+}
+
+.WellnessDashboardTests-categoryContainer:nth-of-type(2n) {
+  background-color: #efefef;
+}
+
+.WellnessDashboardTests-categoryContainer:last-of-type {
+  border-bottom: none;
+}
+
+.WellnessDashboardTests-categoryTitle {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.WellnessDashboardTests-categoryTestsContainer {
+  padding-left: 16px;
+  position: relative;
+}
+
+.WellnessDashboardTests-categoryTest {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+}
+
+.WellnessDashboardTests-categoryTest > * {
+  flex: 1;
+  text-align: center;
+}
+
+.WellnessDashboardTests-categoryTest > *:first-of-type {
+  flex: 2;
+  text-align: left;
+}
+
+.WellnessDashboardTests-categoryTest > *:last-of-type {
+  text-align: right;
+}
+
+.WellnessDashboardTests-testLink {
+  color: #4477b2;
+  font-weight: 600;
+}
+.WellnessDashboardTests-testLink-disabled {
+  color: #8d8d8d;
+  font-weight: 600;
+  .pop-up {
+    display: none;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    .pop-up {
+      display: block;
+      position: absolute;
+      z-index: 10;
+      font-size: 12px;
+      top: calc(0% - 25px);
+      background: white;
+      border: 1px solid #053b47;
+      border-radius: 2px;
+      color: #053b47;
+      padding: 3px 3px;
+    }
+  }
+}

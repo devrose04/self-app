@@ -1,0 +1,31 @@
+.Button {
+  padding: 16px 28px;
+  background: var(--primary);
+  color: var(--light);
+  font-weight: bold;
+  border-radius: 15px;
+  min-width: 200px;
+  border: none;
+  cursor: pointer;
+}
+
+.Button-primary {
+  color: #ffffff;
+  background: var(--primary);
+  border: none;
+}
+.Button-secondary {
+  color: var(--primary) !important;
+  background-color: #ffffff;
+  border: 1px solid var(--primary);
+}
+.Button-secondary .join_now {
+  color: var(--primary)!important;
+}
+
+.Button-disabled {
+  color: white;
+  border-color: #898989!important;
+  background: #898989!important;
+  cursor: not-allowed;
+}

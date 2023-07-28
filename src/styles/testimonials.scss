@@ -1,0 +1,76 @@
+@import "./variables";
+
+.testimonials {
+  padding: 75px 90px;
+  background-color: var(--primary);
+
+  h2 {
+    color: $white;
+    font-family: $italiana-regular;
+    font-size: $title_sm;
+  }
+
+  .row {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    .testimonial {
+      max-width: 392px;
+      height: 261px;
+      border-radius: 40px;
+      padding: 40px 35px;
+      box-sizing: border-box;
+      font-family: $happyMonkey-regular;
+      font-size: $text_md;
+
+      &.light-green {
+        background-color: rgba(250, 243, 238, 0.7);
+      }
+
+      &.light-yellow {
+        background-color: $light_yellow;
+      }
+
+      &.yellow {
+        background-color: $mid_yellow;
+      }
+
+      span {
+        display: block;
+        margin-top: 20px;
+      }
+
+      @media screen and (max-width: 1400px) {
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+
+      @media screen and (max-width: 1060px) {
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: none;
+        height: auto;
+        margin-right: 0px;
+        margin-left: 0px;
+      }
+    }
+
+    @media screen and (max-width: 1400px) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    @media screen and (max-width: 1060px) {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}

@@ -1,0 +1,27 @@
+.WellnessStoryTestMediumStepOne__formContainer {
+  margin-top: 32px;
+}
+
+.WellnessStoryTestMediumStepOne__buttonContainer {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+}
+
+.WellnessStoryTestMediumStepOne__title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.WellnessStoryTestMediumStepOne__contentContainer {
+  padding-left: 16px
+}
+
+.WellnessStoryTestMediumStepOne__description {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 32px;
+}

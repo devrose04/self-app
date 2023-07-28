@@ -1,0 +1,168 @@
+@import "./fonts";
+
+// fonts
+$happyMonkey-regular: "Happy Monkey Regular", sans-serif;
+$inter-regular: "Inter Regular", sans-serif;
+$inter-bold: "Inter Bold", sans-serif;
+$italiana-regular: "Italiana Regular", serif;
+
+// font sizes
+$hero_title: 70px;
+$title_lg: 50px;
+$title_md: 40px;
+$title_sm: 30px;
+$text_lg: 28px;
+$text_md: 20px;
+$text_sm: 18px;
+
+// colors
+$black: #000000;
+$gray: #d9d9d9;
+$background_gray: #e4e3e782;
+$background_solid_gray: rgb(228, 227, 231);
+$background_dark_gray: #494949;
+$white: #ffffff;
+
+$green: #72a9b0;
+$dark_green: #053b47;
+
+$light_skin: #faf3ee;
+$skin: #ffeae0;
+$dark_skin: #ffc1a2;
+
+$salmon: #e8bdab;
+
+$light_yellow: #fef6eb;
+$mid_yellow: #fae9d2;
+$yellow: #f9d290;
+
+// buttons
+$button_skin: #f0c5b0;
+$button_border_orange: #cb5821;
+
+$button_yellow: #e8b867;
+$button_border_brown: #a96f0c;
+
+$button_brown: #eb9266;
+$button_border_brown: #a84716;
+
+$button_gray: #cfc1b6;
+$button_border_gray: #75685d;
+
+$light_green: #e4efea;
+
+// wellness
+
+$light_blue: #c8deff;
+$lavender: #7a8dc8;
+$blue: #1b5bbc;
+$dark_blue: #051f47;
+
+$dark_olive: #3d4c48;
+
+$blueTheme: (
+  navbar: #72a9b0,
+  primary: #1b5bbc,
+  h-color: #423434,
+  accent: #7a8dc8,
+  light: #ffffff,
+  light-accent: #252525,
+  discover-img: #fa7f85,
+
+  //conversationForm-color
+  cf-bg-color: #ffffff,
+  cf-msg-color: #cccccc,
+  cf-text-color: #ffffff,
+  cf-inputText-color: #000000,
+  cf-btntext-color: #080808,
+  cf-border-color: #000000,
+);
+
+$pinkTheme: (
+  navbar: #dba4a6,
+  primary: #f18a8d,
+  h-color: #423434,
+  accent: #9896f0,
+  light: #f6edea,
+  light-accent: #6407fa,
+  discover-img: #fa8b8f,
+
+  //conversationForm-color
+  cf-bg-color: #ffffff,
+  cf-msg-color: #cccccc,
+  cf-text-color: #ffffff,
+  cf-inputText-color: #000000,
+  cf-btntext-color: #080808,
+  cf-border-color: #000000,
+);
+
+$monoTheme: (
+  navbar: #afd0d4,
+  primary: black,
+  accent: #00c3b5,
+  light: #f6f6f6,
+  light-accent: #44706d,
+  h-color: #423434,
+  discover-img: rgb(250, 139, 143),
+  //conversationForm-color
+  cf-bg-color: #1a1919,
+  cf-msg-color: #ffffff,
+  cf-text-color: #ffffff,
+  cf-inputText-color: #000000,
+  cf-btntext-color: #141414,
+  cf-border-color: #000000,
+);
+$blueredTheme: (
+  navbar: #6498e7,
+  primary: #1e3f6d,
+  // primary: #042b60,
+  accent: #c16452,
+  light: #edf1f1,
+  // light: #20b2aa,
+  light-accent: #c20000,
+  h-color: #423434,
+  discover-img: #fa8b8f,
+
+  //conversationForm-color
+  cf-bg-color: #ffffff,
+  cf-msg-color: #cccccc,
+  cf-text-color: #ffffff,
+  cf-inputText-color: #000000,
+  cf-btntext-color: #080808,
+  cf-border-color: #000000,
+);
+$colorfulTheme: (
+  primary: #ffb6c1,
+  accent: #89cff0,
+  light: #ffe5b4,
+  light-accent: #dabfff,
+  fun: #fad689,
+  background: #b19cd9,
+  subtle: #c0c0c0,
+  last: #98ff98,
+  omg: #ff7f50,
+
+  //conversationForm-color
+  cf-bg-color: #ffffff,
+  cf-msg-color: #cccccc,
+  cf-text-color: #ffffff,
+  cf-inputText-color: #000000,
+  cf-btntext-color: #080808,
+  cf-border-color: #000000,
+);
+$brownTheme: (
+  primary: #836313,
+  accent: #cb9b1b,
+  light: #e7bd75,
+  light-accent: #987a6e,
+  other: #c7b9b4,
+  grey: #3e444e,
+
+  //conversationForm-color
+  cf-bg-color: #ffffff,
+  cf-msg-color: #cccccc,
+  cf-text-color: #ffffff,
+  cf-inputText-color: #000000,
+  cf-btntext-color: #080808,
+  cf-border-color: #000000,
+);

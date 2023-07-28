@@ -1,0 +1,86 @@
+.WellnessTestScore {
+
+}
+
+.WellnessTestScore-buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.WellnessTestScore-scoreContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 16px;
+}
+
+.WellnessTestScore-scoreContainer > * {
+  flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+
+  .WellnessTestScore-scoreContainer {
+    flex-direction: column;
+  }
+}
+
+.WellnessTestScore-scoreResultContainer {
+  width: 300px;
+  aspect-ratio: 1;
+  margin: auto;
+  position: relative;
+}
+
+.WellnessTestScore-scoreResultProgressBackground {
+  width: 300px;
+  aspect-ratio: 1;
+  background: #90CAF9;
+  border-radius: 50%;
+}
+
+/*.WellnessTestScore-scoreResultProgressBackgroundValue {*/
+/*  width: 300px;*/
+/*  aspect-ratio: 1;*/
+/*  border: 5px solid #90CAF9;*/
+/*  border-radius: 50%;*/
+/*}*/
+
+.WellnessTestScore-scoreResultProgressValue {
+  position: absolute;
+  z-index: 10;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 48px;
+}
+
+.WellnessTestScore-scoreLabelsList {
+  list-style: none;
+  margin: auto;
+  padding: 0;
+  width: 300px;
+}
+
+.WellnessTestScore-scoreLabelsListItem {
+  margin-bottom: 16px;
+}
+
+.WellnessTestScore-scoreLabelTitle {
+  font-weight: bold;
+  margin-bottom: 8px;
+}

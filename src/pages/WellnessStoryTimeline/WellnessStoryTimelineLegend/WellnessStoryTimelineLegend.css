@@ -1,0 +1,52 @@
+.WellnessStoryTimelineLegend {
+
+}
+
+.WellnessStoryTimelineLegend__legendContainer {
+  border: thin solid #efefef;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 600px;
+  margin: 32px auto;
+}
+
+.WellnessStoryTimelineLegend__legendElement {
+  min-width: 300px;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.WellnessStoryTimelineLegend__legendPoint {
+  display: inline-block;
+  width: 10px;
+  max-width: 10px;
+  min-width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.WellnessStoryTimelineLegend__legendElement > * {
+  flex: 1;
+}
+
+.WellnessStoryTimelineLegend__legendElement > *:first-of-type:not(.WellnessStoryTimelineLegend__legendPoint) {
+  width: 30px;
+  max-width: 30px;
+  min-width: 30px;
+}
+
+.WellnessStoryTimelineLegend__checkboxContainer {
+  width: 60px;
+  max-width: 60px;
+  min-width: 60px;
+  text-align: left;
+}
