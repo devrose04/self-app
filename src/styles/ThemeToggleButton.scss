@@ -1,0 +1,93 @@
+@import "./variables";
+
+.theme-toggle-button {
+  position: fixed;
+  right: 10px;
+  bottom: 50px;
+
+  z-index: 1;
+
+  & > button {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 0px;
+
+    &:hover {
+      background-color: #d8e0e1;
+    }
+  }
+
+  .theme-list {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    right: 10px;
+
+    width: 140px;
+    padding: 10px;
+    display: none;
+    border-radius: 10px;
+
+    background-color: #e3e3e39c;
+
+
+    &.open {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .color-item {
+      width: 60px;
+      height: 60px;
+      border: 2px solid transparent;
+
+      &.active {
+        border: 2px solid;
+      }
+
+      //   TODO: We shouldn't hardcode any colors
+      &.Blue {
+        background: #1b5bbc;
+        color: white;
+        border-radius: 30px;
+      }
+
+      &.Pink {
+        background: rgb(241, 138, 141);
+        color: white;
+        border-radius: 30px;
+      }
+
+      &.Mono {
+        background: black;
+        color: white;
+        border-radius: 30px;
+      }
+
+      &.BlueRed {
+        background: #042b60;
+        color: white;
+        border-radius: 30px;
+      }
+
+      &.Brown {
+        background: #754f17;
+        color: white;
+        border-radius: 30px;
+      }
+
+      &.Colorful {
+        background: #600444;
+        color: white;
+        border-radius: 30px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,23 @@
+@import "./variables";
+@import "./mixins";
+
+.theme-Blue{
+    @include spread-map($blueTheme)
+}
+.theme-Pink{
+    @include spread-map($pinkTheme)
+}
+.theme-Mono{
+    @include spread-map($monoTheme)
+}
+.theme-BlueRed{
+    @include spread-map($blueredTheme)
+}
+
+.theme-Brown{
+    @include spread-map($brownTheme)
+}
+
+.theme-Colorful{
+    @include spread-map($colorfulTheme)
+}

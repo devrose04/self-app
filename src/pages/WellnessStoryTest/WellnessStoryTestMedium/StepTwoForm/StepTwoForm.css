@@ -1,0 +1,30 @@
+
+
+.WellnessStoryTestMediumStepTwo__title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.WellnessStoryTestMediumStepTwo__subTitle {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+.WellnessStoryTestMediumStepTwo__contentContainer {
+  padding-left: 16px;
+}
+
+.WellnessStoryTestMediumStepTwo--marginBottom {
+  margin-bottom: 16px;
+}
+
+.WellnessStoryTestMediumStepTwo__fieldContainer {
+  width: 400px;
+  max-width: 100%;
+}
+
+.WellnessStoryTestMediumStepTwo__buttonContainer {
+  text-align: right;
+}

@@ -1,0 +1,444 @@
+@import "./variables";
+
+.personality {
+  background-color: $yellow;
+  padding: 30px;
+  padding: 30px;
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      @media screen and (max-width: 670px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .share_button {
+      color: $dark_green;
+      font-family: $inter-bold;
+      font-size: $text_md;
+      display: flex;
+      align-items: center;
+      border: none;
+      font-weight: bold;
+      background-color: transparent;
+
+      img {
+        width: 40px;
+        margin-left: 10px;
+      }
+    }
+
+    @media screen and (max-width: 560px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  h2 {
+    font-size: $title_md;
+    font-family: $inter-bold;
+    max-width: none;
+  }
+
+  .tests {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+
+    .col {
+      margin-right: 44px;
+
+      @media screen and (max-width: 1248px) {
+        margin-right: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      @media screen and (max-width: 992px) {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 670px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @media screen and (max-width: 1248px) {
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 670px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 670px) {
+    padding: 12px;
+  }
+}
+
+.relationship {
+  background-color: $dark_skin;
+  padding: 30px;
+  padding: 30px;
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      @media screen and (max-width: 670px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .share_button {
+      color: $dark_green;
+      font-family: $inter-bold;
+      font-size: $text_md;
+      display: flex;
+      align-items: center;
+      border: none;
+      font-weight: bold;
+      background-color: transparent;
+
+      img {
+        width: 40px;
+        margin-left: 10px;
+      }
+    }
+
+    @media screen and (max-width: 560px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  h2 {
+    font-size: $title_md;
+    font-family: $inter-bold;
+    max-width: none;
+  }
+
+  .tests {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+
+    .col {
+      margin-right: 44px;
+
+      @media screen and (max-width: 1248px) {
+        margin-right: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      @media screen and (max-width: 992px) {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 650px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @media screen and (max-width: 1248px) {
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 670px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 670px) {
+    padding: 12px;
+  }
+}
+
+.career {
+  background-color: $light_skin;
+  padding: 30px;
+  padding: 30px;
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      @media screen and (max-width: 670px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .share_button {
+      color: $dark_green;
+      font-family: $inter-bold;
+      font-size: $text_md;
+      display: flex;
+      align-items: center;
+      border: none;
+      font-weight: bold;
+      background-color: transparent;
+
+      img {
+        width: 40px;
+        margin-left: 10px;
+      }
+    }
+
+    @media screen and (max-width: 560px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  h2 {
+    font-size: $title_md;
+    font-family: $inter-bold;
+    max-width: none;
+  }
+
+  .tests {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+
+    .col {
+      margin-right: 44px;
+
+      @media screen and (max-width: 1248px) {
+        margin-right: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      @media screen and (max-width: 992px) {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 650px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @media screen and (max-width: 1248px) {
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 670px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 670px) {
+    padding: 12px;
+  }
+}
+
+.titles {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 130px;
+  padding-bottom: 160px;
+
+  h1 {
+    font-size: $title_lg;
+    font-family: $happyMonkey-regular;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+    font-size: $title_md;
+    font-family: $inter-regular;
+  }
+
+  .banner {
+    background-color: $dark_green;
+    border-radius: 20px;
+    padding: 30px 45px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    h3 {
+      font-weight: normal;
+      font-family: $inter-bold;
+      color: $white;
+      font-size: $text-lg;
+    }
+
+    .banner_link {
+      padding: 16px 16px;
+      background-color: $green;
+      color: $white;
+      font-family: $inter-bold;
+      border-radius: 10px;
+      border: none;
+      width: 40%;
+      text-align: center;
+      font-size: $text-md;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    max-width: 90%;
+  }
+}
+
+.card {
+  padding: 20px;
+  background-color: $white;
+  border-radius: 20px;
+  max-width: 400px;
+  min-height: 260px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-right: 44px;
+  margin-bottom: 30px;
+  position: relative;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 9;
+
+    img {
+      cursor: pointer;
+    }
+
+    h2 {
+      font-family: $inter-regular;
+      font-size: $text_md;
+    }
+
+    .close_button {
+      font-size: $text_md;
+      background-color: transparent;
+      width: 25px;
+      border: none;
+    }
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .row {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      span {
+        font-family: $inter-bold;
+        font-size: $text_sm;
+      }
+
+      .detail_button {
+        border: none;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $inter-regular;
+        color: $green;
+        margin-top: 20px;
+      }
+    }
+
+    .not-completed {
+      margin-top: 40px;
+    }
+
+    span {
+      font-family: $inter-bold;
+      font-size: $text_sm;
+      text-align: center;
+    }
+
+    .hidden_view {
+      width: 100%;
+      height: 100%;
+      background-color: $background_gray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      z-index: 11;
+      top: 0;
+      border-radius: 20px;
+
+      svg {
+        font-size: 100px;
+      }
+    }
+
+    .detail_button {
+      border: none;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: $inter-regular;
+      color: $green;
+      margin-top: 20px;
+    }
+
+    .detail_input_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+
+      label {
+        font-family: $inter-bold;
+      }
+      input {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid $black;
+        font-family: $inter-regular;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        font-size: $text_sm;
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    max-width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  @media screen and (max-width: 670px) {
+    max-width: 90%;
+  }
+}

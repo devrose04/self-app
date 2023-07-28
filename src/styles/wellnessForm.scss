@@ -1,0 +1,209 @@
+@import "./variables";
+
+.wellness_form_container {
+  padding: 20px;
+  background-color: $white;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-right: 44px;
+  margin-bottom: 30px;
+  position: relative;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 9;
+
+    img {
+      cursor: pointer;
+    }
+
+    h2 {
+      font-family: $inter-regular;
+      font-size: $text_md;
+    }
+
+    .close_button {
+      font-size: $text_md;
+      background-color: transparent;
+      width: 25px;
+      border: none;
+    }
+  }
+
+  form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    select {
+      max-width: 80%;
+      margin: auto;
+    }
+
+    .edit_score {
+      margin-top: 28px;
+      padding: 18px 18px;
+      background-color: $blue;
+      color: $white;
+      font-family: $inter-bold;
+      border-radius: 10px;
+      max-width: 173px;
+      border: none;
+      margin-bottom: 40px;
+    }
+
+    .take_test {
+      margin-top: 10px;
+      padding: 18px 18px;
+      background-color: $dark_blue;
+      color: $white;
+      font-family: $inter-bold;
+      border-radius: 10px;
+      max-width: 173px;
+      border: none;
+    }
+
+    .dropdown,
+    .unique_dropdown {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      .row {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .title {
+          margin-bottom: 20px;
+        }
+
+        label {
+          font-family: $inter-bold;
+          font-size: $text_sm;
+        }
+
+        span {
+          font-family: $inter-bold;
+          font-size: $text_sm;
+        }
+
+        .info-buttons {
+          display: flex;
+          flex-direction: column;
+
+          .edit_score {
+            padding: 10px 10px;
+            background-color: $dark_blue;
+            color: $white;
+            font-family: $inter-bold;
+            border-radius: 10px;
+            max-width: 173px;
+            border: none;
+            font-size: 14px;
+            margin: 0;
+            margin-top: 10px;
+          }
+
+          .take_test {
+            margin-top: 10px;
+            padding: 10px 10px;
+            background-color: $blue;
+            color: $white;
+            font-family: $inter-bold;
+            border-radius: 10px;
+            max-width: 173px;
+            border: none;
+            font-size: 14px;
+          }
+        }
+      }
+
+      span {
+        font-family: $inter-bold;
+        font-size: $text_sm;
+        text-align: center;
+      }
+
+      .assessment_links {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .hidden_view {
+        width: 100%;
+        background-color: $background_gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 8;
+        top: 0;
+        border-radius: 20px;
+
+        svg {
+          font-size: 100px;
+        }
+      }
+
+      .detail_button {
+        border: none;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $inter-regular;
+        color: $green;
+        margin-top: 20px;
+      }
+
+      .detail_input_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+
+        label {
+          font-family: $inter-bold;
+        }
+        input {
+          outline: none;
+          border: none;
+          border-bottom: 1px solid $black;
+          font-family: $inter-regular;
+          margin-top: 10px;
+          padding-bottom: 10px;
+          font-size: $text_sm;
+        }
+
+        .save_detail_button {
+          margin-top: 28px;
+          padding: 16px 16px;
+          background-color: $green;
+          color: $dark_green;
+          font-family: $inter-bold;
+          border-radius: 10px;
+          border: none;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    max-width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  @media screen and (max-width: 670px) {
+    max-width: 90%;
+  }
+}

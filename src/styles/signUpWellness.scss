@@ -1,0 +1,143 @@
+@import "../styles/variables";
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+
+  h2 {
+    font-family: $inter-bold;
+    font-size: $title_md;
+  }
+
+  form {
+    max-width: 310px;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+    .names {
+      display: flex;
+      justify-content: space-between;
+
+      input {
+        width: 136px;
+        display: block;
+      }
+    }
+
+    input {
+      margin-bottom: 28px;
+      height: 43px;
+      border-radius: 10px;
+      background-color: $gray;
+      outline: none;
+      border: none;
+      box-sizing: border-box;
+      padding: 10px;
+      font-family: $happyMonkey-regular;
+    }
+
+    .hear_about_us {
+      h3 {
+        font-size: $text-md;
+        font-family: $inter-bold;
+      }
+
+      .radio-wrapper {
+        display: flex;
+        align-items: center;
+        label {
+          margin-right: 15px;
+        }
+
+        input {
+          margin: 0;
+        }
+      }
+    }
+    .hear_about_us_options {
+      display: flex;
+      flex-direction: row;
+    }
+
+    span {
+      font-family: $inter-regular;
+
+      a {
+        color: $black;
+      }
+    }
+
+    .question {
+      color: rgb(108, 108, 108);
+      margin-top: 20px;
+
+      b {
+        color: $black;
+      }
+    }
+
+    .forgot {
+      margin-top: 20px;
+      cursor: pointer;
+      color: $blue;
+    }
+
+    button {
+      margin-top: 12px;
+      padding: 16px 16px;
+      color: $white;
+      font-family: $inter-bold;
+      border-radius: 10px;
+      max-width: 118px;
+    }
+
+    .enabled_button_wellness {
+      background-color: var(--primary);
+      border: none;
+      cursor: pointer;
+    }
+
+    .disabled_button {
+      background-color: $gray;
+      cursor: not-allowed;
+      border: none;
+    }
+
+    .reset_title {
+      margin-bottom: 20px;
+      font-size: $text_md;
+      font-family: $inter-bold;
+    }
+  }
+
+  .confirm_message {
+    font-family: $inter-bold;
+    font-size: $text_md;
+  }
+
+  .go_back {
+    margin-top: 28px;
+    padding: 16px 16px;
+    background-color: $dark_blue;
+    color: $white;
+    font-family: $inter-bold;
+    border-radius: 10px;
+    max-width: 118px;
+  }
+
+  @media screen and (max-width: 920px) {
+    padding-top: calc(20px + 12vh);
+  }
+}
+
+.error {
+  margin-top: 0px;
+  margin-bottom: 12px;
+  font-family: $inter-bold;
+  color: red;
+  font-weight: 700;
+}
