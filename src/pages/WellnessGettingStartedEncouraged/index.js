@@ -1,3 +1,0 @@
-import WellnessGettingStartedEncouraged from './WellnessGettingStartedEncouraged';
-
-export default WellnessGettingStartedEncouraged;
