@@ -1,0 +1,37 @@
+.WellnessTest {
+  flex: 1;
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+  padding: 16px 0px 16px;
+  font-family: "Inter Regular";
+
+    .description {
+      padding-bottom: 10px;
+      padding-left: 25px;
+    
+        p {
+          font-weight: bold;
+        }
+    }
+    
+    .WellnessTest-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      vertical-align: top;
+      position: relative;
+      margin: 0px 50px;
+      padding-top: 10px;
+
+        .WellnessTest-testDetails {
+          color: #423434;
+          font-size: 14px!important;
+        }
+    }
+
+}
+    
+    
+
+

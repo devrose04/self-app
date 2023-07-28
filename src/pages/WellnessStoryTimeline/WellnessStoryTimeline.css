@@ -1,0 +1,105 @@
+.WellnessStoryTimeline {
+  width: 1024px;
+  margin: 32px auto;
+  flex: 1;
+  font-family: "Inter Regular";
+}
+
+.WellnessStoryTimeline__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 32px;
+}
+
+.WellnessStoryTimeline__timelineContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 64px;
+}
+
+.WellnessStoryTimeline__timelineRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  height: 65px;
+  cursor: pointer;
+}
+
+.WellnessStoryTimeline__timelineRow > * {
+  flex: 1;
+  padding: 0 10px;
+  position: relative;
+}
+
+.WellnessStoryTimeline__timelineRow > *:first-of-type {
+  text-align: right;
+}
+
+.WellnessStoryTimeline__pointContainer {
+  max-width: 50px;
+  position: relative;
+  width: 50px;
+  height: 100%;
+}
+
+.WellnessStoryTimeline__verticalLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 4px;
+  height: 100%;
+  background: #ccc;
+  margin: auto;
+}
+
+.WellnessStoryTimeline__point {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.WellnessStoryTimeline__contentContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 8px
+}
+
+.WellnessStoryTimeline__contentContainer > * {
+  flex: 1;
+}
+
+.WellnessStoryTimeline__addToStoryContainer {
+  max-width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.WellnessStoryTimeline__selectedStory {
+  background-color: #efefef;
+}
+
+@media screen and (max-width: 768px) {
+
+  .WellnessStoryTimeline__contentContainer {
+    flex-direction: column;
+  }
+
+  .WellnessStoryTimeline__addToStoryContainer {
+    margin-top: 32px;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

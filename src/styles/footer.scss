@@ -1,0 +1,64 @@
+@import "../styles/_variables.scss";
+@import "../styles/theme";
+
+.footer {
+  background-color: var(--navbar);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  width: 100%;
+  box-sizing: border-box;
+
+  &.wellness {
+    border-radius: 0;
+  }
+
+  .links {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0 !important;
+
+    div {
+      display: flex;
+    }
+    a {
+      font-family: $inter-bold;
+      font-size: $text_md;
+      color: $black;
+
+
+      @media screen and (max-width: 600px) {
+        margin-top: 10px;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      width: 40%;
+    }
+
+    @media screen and (max-width: 892px) {
+      width: 60%;
+    }
+
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      justify-content: center;
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.wellness {
+  background-color: $blue;
+
+  a {
+    color: $white !important;
+  }
+}

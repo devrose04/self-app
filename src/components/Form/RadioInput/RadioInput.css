@@ -1,0 +1,58 @@
+.RadioInput {
+  font-weight: normal;
+  margin: 16px 0 32px;
+}
+
+.RadioInput-optionsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  padding: 0;
+  gap: 16px;
+}
+
+.RadioInput-option {
+  flex: 1;
+  position: relative;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.RadioInput-label {
+  padding-left: 32px;
+  cursor: pointer;
+}
+
+.RadioInput-radio {
+  width: 0;
+  height: 0;
+}
+
+.RadioInput-radio:not(:checked):before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #2344b9;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  background: white;
+}
+
+.RadioInput-radio:checked:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #2344b9;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: absolute;
+  background: #2344b9;
+  top: 0;
+  cursor: pointer;
+}

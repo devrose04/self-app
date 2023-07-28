@@ -1,0 +1,140 @@
+@import "../styles/variables";
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  h2 {
+    font-family: $inter-bold;
+    font-size: $title_md;
+  }
+
+  form {
+    max-width: 310px;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+    .names {
+      display: flex;
+      justify-content: space-between;
+
+      input {
+        width: 136px;
+        display: block;
+      }
+    }
+
+    .hear_about_us {
+      h3 {
+        font-size: $text-md;
+        font-family: $inter-bold;
+      }
+
+      .radio-wrapper {
+        display: flex;
+        align-items: center;
+        label {
+          margin-right: 15px;
+        }
+
+        input {
+          margin: 0;
+        }
+      }
+    }
+
+    input {
+      margin-bottom: 28px;
+      height: 43px;
+      border-radius: 10px;
+      background-color: $gray;
+      outline: none;
+      border: none;
+      box-sizing: border-box;
+      padding: 10px;
+      font-family: $happyMonkey-regular;
+    }
+
+    span {
+      font-family: $inter-regular;
+
+      a {
+        color: $black;
+      }
+    }
+
+    .question {
+      color: rgb(108, 108, 108);
+
+      b {
+        color: $black;
+      }
+    }
+
+    .forgot {
+      margin-top: 20px;
+      cursor: pointer;
+      color: $green;
+    }
+
+    button {
+      margin-top: 28px;
+      padding: 16px 16px;
+      color: $white;
+      font-family: $inter-bold;
+      border-radius: 10px;
+      max-width: 118px;
+    }
+
+    .enabled_button_discover {
+      background-color:var(--primary);
+      border: none;
+      cursor: pointer;
+    }
+
+    .disabled_button_discover {
+      background-color: $gray;
+      cursor: not-allowed;
+      border: none;
+    }
+
+    .reset_title {
+      margin-bottom: 20px;
+      font-size: $text_md;
+      font-family: $inter-bold;
+    }
+  }
+
+  .confirm_message {
+    font-family: $inter-bold;
+    font-size: $text_md;
+  }
+
+  .go_back {
+    margin-top: 28px;
+    padding: 16px 16px;
+    background-color: $dark_green;
+    color: $white;
+    font-family: $inter-bold;
+    border-radius: 10px;
+    max-width: 118px;
+  }
+
+  @media screen and (max-width: 920px) {
+    padding-top: calc(20px + 12vh);
+  }
+}
+
+.error {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: red;
+  font-weight: 700;
+  font-size: $text_md;
+  font-family: $happyMonkey-regular !important;
+}

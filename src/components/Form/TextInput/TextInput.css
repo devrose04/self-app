@@ -1,0 +1,17 @@
+.TextInput {
+  margin-bottom: 8px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.TextInput__inputField {
+  background: #FFFFFF;
+  border: 1px solid #051F47;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top:8px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  width: 100%;
+}
